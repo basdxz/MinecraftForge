@@ -96,8 +96,6 @@ public class ForgeConfig {
     public static class Client {
         public final BooleanValue alwaysSetupTerrainOffThread;
 
-        public final BooleanValue experimentalForgeLightPipelineEnabled;
-
         public final BooleanValue showLoadWarnings;
 
         public final BooleanValue useCombinedDepthStencilAttachment;
@@ -114,11 +112,6 @@ public class ForgeConfig {
                         "Not recommended for computers without a significant number of cores available.")
                 .translation("forge.configgui.alwaysSetupTerrainOffThread")
                 .define("alwaysSetupTerrainOffThread", false);
-
-            experimentalForgeLightPipelineEnabled = builder
-                .comment("EXPERIMENTAL: Enable the Forge block rendering pipeline - fixes the lighting of custom models.")
-                .translation("forge.configgui.forgeLightPipelineEnabled")
-                .define("experimentalForgeLightPipelineEnabled", false);
 
             showLoadWarnings = builder
                 .comment("When enabled, Forge will show any warnings that occurred during loading.")

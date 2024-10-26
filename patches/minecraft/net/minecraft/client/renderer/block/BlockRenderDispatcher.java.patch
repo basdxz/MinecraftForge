@@ -1,14 +1,5 @@
 --- a/net/minecraft/client/renderer/block/BlockRenderDispatcher.java
 +++ b/net/minecraft/client/renderer/block/BlockRenderDispatcher.java
-@@ -37,7 +_,7 @@
-         this.blockModelShaper = p_173399_;
-         this.blockEntityRenderer = p_173400_;
-         this.blockColors = p_173401_;
--        this.modelRenderer = new ModelBlockRenderer(this.blockColors);
-+        this.modelRenderer = new net.minecraftforge.client.model.lighting.ForgeModelBlockRenderer(this.blockColors);
-         this.liquidBlockRenderer = new LiquidBlockRenderer();
-     }
- 
 @@ -45,12 +_,22 @@
          return this.blockModelShaper;
      }
